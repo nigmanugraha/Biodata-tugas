@@ -15,11 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openMap(View v){
-        Uri uri = Uri.parse("geo:-6.9826264,100.4070121?q=" + Uri.encode("UDINUS"));
+        Uri uri = Uri.parse("geo:-6.704864,111.061225?q=-6.704864,111.061225");
         Intent it = new Intent(Intent.ACTION_VIEW, uri);
         it.setPackage("com.google.android.apps.maps");
         startActivity(it);
-
     }
 
     public void onCall(View v){
